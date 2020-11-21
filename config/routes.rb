@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     resource :user_skills, only: [:create, :destroy]
   end
   get '/mypage' => 'users#mypage'
+  root "users#index"
     
 end
