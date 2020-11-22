@@ -1,5 +1,4 @@
 require_relative 'boot'
-
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -9,6 +8,7 @@ Bundler.require(*Rails.groups)
 module Testapp
   class Application < Rails::Application
     config.load_defaults 6.0
+    config.autoloader = :classic
     config.i18n.default_locale = :ja
     config.time_zone = 'Asia/Tokyo'
   end
