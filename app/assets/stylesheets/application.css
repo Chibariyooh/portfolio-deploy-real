@@ -171,6 +171,9 @@ body{
     margin:0 auto;
     width:80%;
 }
+.mypage-user-personal-data{
+    padding-left:3rem;
+}
 .mypage-user-edit{
     width:50%;
     margin:0 auto;
@@ -188,8 +191,74 @@ body{
     text-decoration: none;
     color:white;
 }
+.mypage-user-personal-skill-name{
+    padding-left:3rem;
+}
 /* mypageの記述終了 */
 
+/* プロフィール編集画面の記述 */
+.edit-user-data-title{
+    text-align:center;
+}
+.edit-user-data-personal-wrapper{
+    text-align:center;
+}
+.edit-user-skill-data{
+    text-align:center;
+    width:20%;
+    margin:0 auto;
+}
+.edit-user-skill-data-checkbox{
+    text-align:left;
+    padding:1rem 0 0 5rem;
+}
+.add-skill-tag a{
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding:0.5rem 2rem;
+    border-radius:5%;
+}
+.update-user-data-btn{
+    margin:3.5rem 0 3.5rem 0;
+    padding:1rem 0;
+    background-color:black;
+}
+/* プロフィール編集画面の記述終了 */
+
+/* スキルタグの追加の記述 */
+.add-skilltag-title{
+    text-align:center;
+    padding-bottom:1rem;
+    font-weight:bold;
+}
+.add-skilltag-wrapper{
+    text-align:center;
+    width:20%;
+    margin:0 auto;
+}
+.add-skilltag-btn{
+    margin:3.5rem 0 3.5rem 0;
+    padding:1rem 0;
+    background-color:black;
+}
+/* スキルタグの追加の記述終了 */
+/* 登録完了の記述 */
+.create-title{
+    text-align:center;
+}
+.create-btn{
+    text-align:center;
+    width:20%;
+    margin:3.5rem auto 3.5rem auto;
+    padding:1rem 0;
+    background-color:black;
+}
+.create-btn a{
+    text-decoration: none;
+    color:white;
+}
+/* 登録完了の記述終了 */
 /* footer */
 .footer{
     width: 100%;
