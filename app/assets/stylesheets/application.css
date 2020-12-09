@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+.header{
+    margin:0 auto;
+    padding-right:3rem;
+    display:flex;
+}
+.header-nav{
+    position:absolute;
+    right:7%;
+    display:flex;
+    justify-content: center;
+}
+.header-nav-list{
+    padding:1rem 1rem 0 1rem;
+}
+.user{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.user-personal{
+    width:27%;
+    text-align:center;
+}
+.user-personal-skill-name{
+    background-color:yellow;
+    padding:1rem;
+    border-radius: 20%;
+}
