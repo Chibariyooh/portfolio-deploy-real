@@ -140,6 +140,7 @@ body{
 .user{
     display:flex;
     flex-wrap: wrap;
+    margin:2rem 1rem;
 }
 .user-personal{
     width:30%;
@@ -225,6 +226,24 @@ body{
     background-color:black;
 }
 /* プロフィール編集画面の記述終了 */
+
+/* ログイン画面編集の記述 */
+.edit-login-information-title{
+    text-align:center;
+}
+.edit-login-information-wrapper{
+    text-align:center;
+    width:20%;
+    margin:0 auto;}
+.edit-login-informations{
+    padding-left:3rem;
+}
+.action-buttun-update-login-information{
+    margin:3.5rem 0 3.5rem 0;
+    padding:1rem 0;
+    background-color:black;
+}
+/* ログイン画面編集の記述終了 */
 
 /* スキルタグの追加の記述 */
 .add-skilltag-title{
