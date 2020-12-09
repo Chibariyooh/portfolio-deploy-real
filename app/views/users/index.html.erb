@@ -4,9 +4,9 @@
     <% @user.each do |user| %>
         <div class="user-personal">
             <p class="user-personal-data">
-                <span>名前： </span><%= user.name %><br>
-                <span>年齢：</span><%= user.age %><br>
-                <span>挨拶：</span><%= user.description %>
+                <span class="user-personal-data-bold">(名前)</span><%= user.name %><br>
+                <%# <span>年齢：</span><%= user.age %><br> 
+                <span class="user-personal-data-bold">(挨拶)<br></span><%= user.description %>
             </p>
             
             <% user.skills.each do |skill| %>
