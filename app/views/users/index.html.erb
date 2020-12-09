@@ -3,9 +3,11 @@
 <div class="user">
     <% @user.each do |user| %>
         <div class="user-personal">
-            <p><span>名前： </span><%= user.name %></p>
-            <p><span>年齢：</span><%= user.age %></p>
-            <p><span>挨拶：</span><%= user.description %></p>
+            <p class="user-personal-data">
+                <span>名前： </span><%= user.name %><br>
+                <span>年齢：</span><%= user.age %><br>
+                <span>挨拶：</span><%= user.description %>
+            </p>
             
             <% user.skills.each do |skill| %>
             <p class="user-personal-skill-name"><%= skill[:skill_name] %></p>
