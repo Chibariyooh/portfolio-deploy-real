@@ -15,6 +15,16 @@
         <%= f.label :description,"ご挨拶" %>
         <%= f.text_field :description %>
     </p>
+    <p>
+        <%= f.label :status,"忙しさ度" %>
+        <%# <%= f.text_field :status %> 
+        <%= f.select :status, [["空いてます！", "空いてます！"], ["少し空いてます！", "少し空いてます！"], ["少し忙しいです！", "少し忙しいです！"], ["だいぶ忙しいです！", "だいぶ忙しいです！"]], include_blank: "選択して下さい" %>
+    </p>
+    <p>
+        <%= f.label :twitter,"TwitterのID(@以下)" %><br>
+        @<%= f.text_field :twitter %>
+    </p>
+
 
     <div class="check_box" >
         <%= f.collection_check_boxes(:skill_ids, Skill.all, :id, :skill_name) do |b| %>

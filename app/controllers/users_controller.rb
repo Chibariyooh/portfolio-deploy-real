@@ -18,7 +18,6 @@ class UsersController < ApplicationController
 
     def show
         @user = User.find(params[:id])
-        #@skills = user.skill.all
     end
 
     def edit
@@ -50,7 +49,7 @@ class UsersController < ApplicationController
 
     private 
         def user_params
-            params.fetch(:user,{}).permit(:name, :age ,:description,  { skill_ids: [] })
+            params.fetch(:user,{}).permit(:name, :age ,:description,:stutus,:twitter ,{ skill_ids: [] })
         end
 
             def set_user
