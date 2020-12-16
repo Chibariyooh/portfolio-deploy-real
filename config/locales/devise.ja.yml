@@ -71,6 +71,7 @@ ja:
     sessions:
       new:
         sign_in: "ログイン"
+        forgot_your_password: "パスワードを忘れましたか?"
     shared:
       links:
         back: "戻る"

@@ -13,13 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+/* 要素全体 */
 body{
-    min-height: 100vh;
     position: relative;
+    margin:0;
 }
+/* 要素全体の記述終了 */
+
+/* header */
 .header{
     margin:0 auto;
-    padding-right:3rem;
     display:flex;
     background-color:#FFFACD;
 }
@@ -41,19 +45,113 @@ body{
     color:white;
     text-decoration: none;
 }
+/* headerの記述終了 */
+
+/* ログイン画面の記述 */
+.login-title{
+    text-align:center;
+}
+.login-wrapper{
+    padding:2rem 5rem;
+    text-align:center;
+    margin:0 auto 2rem auto;
+    width:50%;
+    max-width: 150px;
+    border:0.6rem solid #D0FF43;
+    border-radius:10%;
+}
+.field{
+    text-align:left;
+    margin:0 0 1rem 0;
+}
+.login-link{
+    text-align:right;
+}
+.login-link a{
+    color:white;
+    background-color:black;
+    margin-right:0.7rem;
+    padding:0.7rem;
+    text-decoration: none;
+}
+.login-link-logon{
+    margin-bottom:1.5rem;
+}
+.login-link-passwordforgot{
+    margin-bottom:3.5rem;
+}
+/* ログイン画面の記述終了 */
+
+/* 新規登録画面の記述 */
+.logon-title{
+    text-align:center;
+}
+.logon-wrapper{
+    padding:2rem 5rem;
+    text-align:center;
+    margin:0 auto 2rem auto;
+    width:50%;
+    max-width: 150px;
+    border:0.6rem solid #FFFF22;
+    border-radius:10%;
+}
+.field{
+    text-align:left;
+    margin:0 0 1rem 0;
+}
+.logon-link{
+    text-align:right;
+}
+.logon-link a{
+    color:white;
+    background-color:black;
+    margin-right:0.7rem;
+    padding:0.7rem;
+    text-decoration: none;
+}
+.logon-link-login{
+    margin-bottom:3.5rem;
+}
+/* 新規登録画面の記述終了*/
+
+/* パスワード再送信画面の記述 */
+.password-forgot-title{
+    text-align:center;
+}
+.password-forgot-wrapper{
+    padding:2rem 5rem;
+    text-align:center;
+    margin:0 auto 2rem auto;
+    width:50%;
+    max-width: 150px;
+    border:0.6rem solid #FF1A6F;
+    border-radius:10%;
+}
+.field{
+    text-align:left;
+    margin:0 0 1rem 0;
+}
+.password-forgot-text{
+    text-align:center;
+    margin-bottom:3rem;
+}
+/* パスワード再送信画面の記述終了*/
+/* main部分の記述 */
 .user{
     display:flex;
     flex-wrap: wrap;
+    margin:2rem 1rem;
 }
 .user-personal{
     width:30%;
     text-align:center;
     border:0.2rem solid aqua;
-    border-radius: 30%;
+    border-radius: 10%;
     margin:1rem;
 }
 .user-personal-data{
     display:inline-block;
+    width:80%;
     text-align:left;
 }
 .user-personal-skill-name{
@@ -64,9 +162,18 @@ body{
     margin:0.5rem auto;
     font-weight: bold;
 }
+.user-personal-data-bold{
+    font-weight:bold;
+}
+/* main部分の記述終了 */
+
+/* mypageの記述 */
 .mypage-user-personal{
     margin:0 auto;
     width:80%;
+}
+.mypage-user-personal-data{
+    padding-left:3rem;
 }
 .mypage-user-edit{
     width:50%;
@@ -85,12 +192,98 @@ body{
     text-decoration: none;
     color:white;
 }
+.mypage-user-personal-skill-name{
+    padding-left:3rem;
+}
+/* mypageの記述終了 */
+
+/* プロフィール編集画面の記述 */
+.edit-user-data-title{
+    text-align:center;
+}
+.edit-user-data-personal-wrapper{
+    text-align:center;
+}
+.edit-user-skill-data{
+    text-align:center;
+    width:20%;
+    margin:0 auto;
+}
+.edit-user-skill-data-checkbox{
+    text-align:left;
+    padding:1rem 0 0 5rem;
+}
+.add-skill-tag a{
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding:0.5rem 2rem;
+    border-radius:5%;
+}
+.update-user-data-btn{
+    margin:3.5rem 0 3.5rem 0;
+    padding:1rem 0;
+    background-color:black;
+}
+/* プロフィール編集画面の記述終了 */
+
+/* ログイン画面編集の記述 */
+.edit-login-information-title{
+    text-align:center;
+}
+.edit-login-information-wrapper{
+    text-align:center;
+    width:20%;
+    margin:0 auto;}
+.edit-login-informations{
+    padding-left:3rem;
+}
+.action-buttun-update-login-information{
+    margin:3.5rem 0 3.5rem 0;
+    padding:1rem 0;
+    background-color:black;
+}
+/* ログイン画面編集の記述終了 */
+
+/* スキルタグの追加の記述 */
+.add-skilltag-title{
+    text-align:center;
+    padding-bottom:1rem;
+    font-weight:bold;
+}
+.add-skilltag-wrapper{
+    text-align:center;
+    width:20%;
+    margin:0 auto;
+}
+.add-skilltag-btn{
+    margin:3.5rem 0 3.5rem 0;
+    padding:1rem 0;
+    background-color:black;
+}
+/* スキルタグの追加の記述終了 */
+/* 登録完了の記述 */
+.create-title{
+    text-align:center;
+}
+.create-btn{
+    text-align:center;
+    width:20%;
+    margin:3.5rem auto 3.5rem auto;
+    padding:1rem 0;
+    background-color:black;
+}
+.create-btn a{
+    text-decoration: none;
+    color:white;
+}
+/* 登録完了の記述終了 */
+/* footer */
 .footer{
     width: 100%;
     background-color: #89c7de;
     color: #FFF;
     text-align: center;
-    padding: 30px 0;
-    position:absolute;
-    bottom:0;
+    padding: 1rem 0;
 }
+/* footerの記述終了 */
