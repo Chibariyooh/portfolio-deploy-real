@@ -1,7 +1,7 @@
 # README
 
-メンバー情報管理アプリ
-Things you may want to cover:
+# メンバー情報管理アプリ
+
 
 * Ruby version
 2.6.6
