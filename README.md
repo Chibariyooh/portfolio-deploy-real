@@ -1,10 +1,14 @@
 # README
 
-# メンバー情報管理アプリ
+## メンバー情報管理アプリ
 
 
 * Ruby version
 2.6.6
+
+* Rails version
+6.0.3.3
+
 * System dependencies
 
 * Configuration
