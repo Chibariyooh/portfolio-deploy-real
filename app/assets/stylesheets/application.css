@@ -241,9 +241,12 @@ body{
     width:20%;
     margin:0 auto;
 }
+.edit-user-skill-data-title{
+    padding-top:1rem;
+}
 .edit-user-skill-data-checkbox{
     text-align:left;
-    padding:1rem 0 0 5rem;
+    padding:0 0 0 5rem;
 }
 .add-skill-tag a{
     text-decoration: none;

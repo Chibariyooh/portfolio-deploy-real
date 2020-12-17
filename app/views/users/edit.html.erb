@@ -1,20 +1,20 @@
 <%# <h1>Users#edit</h1>
 <p>Find me in app/views/users/edit.html.erb</p> %>
 
-<<<<<<< HEAD
-<h1>登録情報編集</h1>
+<h1 class="edit-user-data-title">登録情報編集</h1>
+<div class="edit-user-data-personal-wrapper">
 <%= form_for @user do |f| %>
     <p>
         <%= f.label :name,"お名前" %>
         <%= f.text_field :name %>
     </p>
-    <p>
+    <%# <p>
         <%= f.label :age, "ご年齢" %>
-        <%= f.text_field :age %>
-    </p>
+        <%# <%= f.text_field :age %>
+    <%# </p> %> 
     <p>
         <%= f.label :description,"ご挨拶" %>
-        <%= f.text_field :description %>
+        <%= f.text_area :description %>
     </p>
     <p>
         <%= f.label :status,"忙しさ度" %>
@@ -25,29 +25,10 @@
         <%= f.label :twitter,"TwitterのID(@以下)" %><br>
         @<%= f.text_field :twitter %>
     </p>
-
-
-    <div class="check_box" >
-=======
-<h1 class="edit-user-data-title">登録情報編集</h1>
-<div class="edit-user-data-personal-wrapper">
-    <%= form_for @user do |f| %>
-        <p>
-            <%= f.label :name,"お名前" %>
-            <%= f.text_field :name %>
-        </p>
-        <p>
-            <%= f.label :age, "ご年齢" %>
-            <%= f.text_field :age %>
-        </p>
-        <p>
-            <%= f.label :description,"ご挨拶" %>
-            <%= f.text_field :description %>
-        </p>
 </div>
 <div class="edit-user-skill-data">
+    <h3 class="edit-user-skill-data-title">所持スキル</h3>
     <div class="check_box edit-user-skill-data-checkbox" >
->>>>>>> master
         <%= f.collection_check_boxes(:skill_ids, Skill.all, :id, :skill_name) do |b| %>
             <%= b.label { b.check_box + b.text } %>
             <br>
