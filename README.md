@@ -10,6 +10,9 @@
 * Rails version
 6.0.3.3
 
+* Database creation
+Postgresql
+
 * System dependencies
 
 * Configuration
