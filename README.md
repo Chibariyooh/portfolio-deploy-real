@@ -1,8 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
+メンバー情報管理アプリ
 Things you may want to cover:
 
 * Ruby version
