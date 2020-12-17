@@ -18,7 +18,6 @@ class UsersController < ApplicationController
 
     def show
         @user = User.find(params[:id])
-        #@skills = user.skill.all
     end
 
     def edit
@@ -36,7 +35,7 @@ class UsersController < ApplicationController
 
     def update
         @user = User.find(params[:id])  
-        @user.update(user_params)  
+        @user.update!(user_params)  
         if current_user.update(user_params)
             redirect_to user_path(current_user)
         else
@@ -50,7 +49,7 @@ class UsersController < ApplicationController
 
     private 
         def user_params
-            params.fetch(:user,{}).permit(:name, :age ,:description,  { skill_ids: [] })
+            params.fetch(:user,{}).permit(:name, :age ,:description,:status,:twitter ,{ skill_ids: [] })
         end
 
             def set_user

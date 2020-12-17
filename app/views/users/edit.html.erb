@@ -3,21 +3,31 @@
 
 <h1 class="edit-user-data-title">登録情報編集</h1>
 <div class="edit-user-data-personal-wrapper">
-    <%= form_for @user do |f| %>
-        <p>
-            <%= f.label :name,"お名前" %>
-            <%= f.text_field :name %>
-        </p>
-        <p>
-            <%= f.label :age, "ご年齢" %>
-            <%= f.text_field :age %>
-        </p>
-        <p>
-            <%= f.label :description,"ご挨拶" %>
-            <%= f.text_field :description %>
-        </p>
+<%= form_for @user do |f| %>
+    <p>
+        <%= f.label :name,"お名前" %>
+        <%= f.text_field :name %>
+    </p>
+    <%# <p>
+        <%= f.label :age, "ご年齢" %>
+        <%# <%= f.text_field :age %>
+    <%# </p> %> 
+    <p>
+        <%= f.label :description,"ご挨拶" %>
+        <%= f.text_area :description %>
+    </p>
+    <p>
+        <%= f.label :status,"忙しさ度" %>
+        <%# <%= f.text_field :status %> 
+        <%= f.select :status, [["空いてます！", "空いてます！"], ["少し空いてます！", "少し空いてます！"], ["少し忙しいです！", "少し忙しいです！"], ["だいぶ忙しいです！", "だいぶ忙しいです！"]], include_blank: "選択して下さい" %>
+    </p>
+    <p>
+        <%= f.label :twitter,"TwitterのID(@以下)" %><br>
+        @<%= f.text_field :twitter %>
+    </p>
 </div>
 <div class="edit-user-skill-data">
+    <h3 class="edit-user-skill-data-title">所持スキル</h3>
     <div class="check_box edit-user-skill-data-checkbox" >
         <%= f.collection_check_boxes(:skill_ids, Skill.all, :id, :skill_name) do |b| %>
             <%= b.label { b.check_box + b.text } %>
@@ -28,5 +38,6 @@
     <div class="update-user-data-btn">
         <%= f.submit "ユーザー情報の更新"%>
     </div>
+    <p>編集ボタンが反応しない時はページをリロードしてください</p>
 <% end %>
 </div>

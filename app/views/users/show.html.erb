@@ -6,14 +6,17 @@
     <div class="mypage-user-personal">
         <h3>基本情報</h3>
         <p class="mypage-user-personal-data">
-            <span>名前： </span><%= @user.name %><br>
-            <span>年齢：</span><%= @user.age %><br>
-            <span>挨拶：</span><%= @user.description %>
+            <span>(名前)</span><%= @user.name %><br>
+            <span>(忙しさ)</span><%= @user.status %><br>
+            <span>(挨拶)<br></span><%= @user.description %><br>
         </p>
         <h3>所持スキル</h3>
         <% @user.skills.each do |skill| %>
         <p class="mypage-user-personal-skill-name"><%= skill[:skill_name] %></p>
         <% end %>
+        <p class="twitter-url-show">
+        <%= link_to "Twitterはこちら！",  "https://twitter.com/#{@user.twitter}" %>
+        </p>
     </div>
     <div class="mypage-user-edit">
         <div class="mypage-user-edit-item"><%=link_to "プロフィール情報編集", edit_user_path(current_user) %></div>

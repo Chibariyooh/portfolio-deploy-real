@@ -4,11 +4,17 @@
     <% @user.each do |user| %>
         <div class="user-personal">
             <p class="user-personal-data">
-                <span class="user-personal-data-bold">(名前)</span><%= user.name %><br>
-                <%# <span>年齢：</span><%= user.age %><br> 
-                <span class="user-personal-data-bold">(挨拶)<br></span><%= user.description %>
+                <span class="user-personal-data-bold">(名前)  </span><%= user.name %><br><br>
+                <span class="user-personal-data-bold">(忙しさ)  </span><%= user.status %><br><br>
+                <span class="user-personal-data-bold">(挨拶)<br></span><%= user.description %><br>
             </p>
-            
+            <p class="personal-url">
+                <%= link_to '詳細はこちら！', user_path(user) %>
+            </p>
+            <p class="twitter-url">
+                <%= link_to "Twitterはこちら！", "https://twitter.com/#{user.twitter}" %>
+            </p>
+
             <% user.skills.each do |skill| %>
             <p class="user-personal-skill-name"><%= skill[:skill_name] %></p>
             <!--<p><%= skill[:skill_level] %></p>-->
