@@ -5,13 +5,13 @@
 現状のスキル、現在の忙しさの具合、TwitterのIDなどメンバーそれぞれの情報を管理します。
 
 * Ruby version
-2.6.6
+##### 2.6.6
 
 * Rails version
-6.0.3.3
+##### 6.0.3.3
 
-* Database creation
-Postgresql
+* Database
+##### Postgresql
 
 * System dependencies
 
