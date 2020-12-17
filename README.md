@@ -4,14 +4,14 @@
 コミュニティ内でメンバーのスキルの把握ができずに困っていませんか？その問題を解決できるアプリです。
 現状のスキル、現在の忙しさの具合、TwitterのIDなどメンバーそれぞれの情報を管理します。
 
-* Ruby version
-##### 2.6.6
+* Ruby version 
+#####     2.6.6
 
 * Rails version
-##### 6.0.3.3
+#####     6.0.3.3
 
 * Database
-##### Postgresql
+#####     Postgresql
 
 * System dependencies
 
